@@ -25,7 +25,7 @@ export default function Image() {
         }}
       >
         <div style={{ display: "flex", alignItems: "center", gap: 16, fontSize: 22, color: "#4d5562", letterSpacing: 4, textTransform: "uppercase" }}>
-          <div style={{ width: 14, height: 14, borderRadius: 7, background: "#db2777" }} />
+          <div style={{ width: 14, height: 14, borderRadius: 7, background: "#8b5cf6" }} />
           {site.role} · {site.specialty}
         </div>
         <div style={{ display: "flex", flexDirection: "column" }}>

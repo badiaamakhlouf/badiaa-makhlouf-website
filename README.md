@@ -63,7 +63,7 @@ Images are optional. Each slot renders only when a path is set.
 
 AI-generated covers work best as abstract illustrations, not fake screenshots or fake people. For a consistent set, keep this style suffix on every prompt:
 
-> *…, minimal isometric technical illustration, thin line art, soft white background, pink and slate accents, soft shadows, lots of negative space, no text, no logos, no people*
+> *…, minimal isometric technical illustration, thin line art, soft white background, light purple and slate accents, soft shadows, lots of negative space, no text, no logos, no people*
 
 | Project | Subject to put before the style suffix |
 |---|---|

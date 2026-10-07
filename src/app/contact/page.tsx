@@ -59,7 +59,7 @@ export default function ContactPage() {
               <div className="rounded-2xl border border-line bg-panel p-6">
                 <p className="font-mono text-[11px] uppercase tracking-wider text-faint">Location</p>
                 <p className="mt-0.5 font-medium">{site.location}</p>
-                <p className="mt-1 text-sm text-muted">CET · open to hybrid and remote within the EU</p>
+                <p className="mt-1 text-sm text-muted">CET · open to on-site or remote roles in Germany</p>
               </div>
             </Reveal>
           </div>

@@ -16,7 +16,7 @@ export const site = {
     "I build LLM systems that leave the notebook: agents, extraction pipelines, evaluation harnesses and the cloud data platforms underneath them.",
   intro:
     "7+ years across machine learning, deep learning and data engineering — in healthcare, industrial IoT, energy, automotive, hospitality and agriculture — now focused on generative and agentic AI. I care about the unglamorous parts that decide whether an AI system ships: schemas, evaluation, data foundations and governance.",
-  availability: "Open to AI Engineer / GenAI Engineer roles — Munich, hybrid or remote (EU).",
+  availability: "Open to AI roles in Germany — on-site or remote.",
   links: {
     github: "https://github.com/badiaamakhlouf",
     linkedin: "https://www.linkedin.com/in/badiaa-makhlouf-b77032116/",

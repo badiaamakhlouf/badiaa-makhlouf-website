@@ -64,7 +64,7 @@ export default function Home() {
                   <span className="relative inline-flex size-2 rounded-full bg-k-output" />
                 </span>
               )}
-              Open to {site.role} roles · {site.location}
+              Open to AI roles in Germany · on-site or remote
             </span>
             <h1 className="mt-7 text-[2.6rem] leading-[1.04] font-medium tracking-tight text-balance sm:text-6xl lg:text-[4.1rem]">
               {site.name}. I build AI systems that <Accent>ship</Accent> — and prove they work.

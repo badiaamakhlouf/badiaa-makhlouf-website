@@ -2,7 +2,7 @@
 
 /*
  * Design tokens — a light, editorial "systems blueprint" palette.
- * Pink is the signal colour (agents, calls to action); the node-kind colours
+ * Light purple is the signal colour (agents, calls to action); the node-kind colours
  * are only used inside architecture diagrams and badges.
  */
 @theme {
@@ -15,15 +15,15 @@
   --color-fg: #0e1116;
   --color-muted: #4d5562;
   --color-faint: #7d8492;
-  --color-signal: #db2777;
-  --color-signal-soft: rgb(219 39 119 / 0.08);
+  --color-signal: #8b5cf6;
+  --color-signal-soft: rgb(139 92 246 / 0.08);
   --color-on-signal: #ffffff;
   /* Accent text on the inverted (bg-fg) contact panel. */
-  --color-signal-inverse: #f9a8d4;
+  --color-signal-inverse: #c4b5fd;
 
   --color-k-input: #64748b;
-  --color-k-agent: #db2777;
-  --color-k-model: #7c3aed;
+  --color-k-agent: #8b5cf6;
+  --color-k-model: #db2777;
   --color-k-service: #2563eb;
   --color-k-store: #0d9488;
   --color-k-guard: #ea580c;
@@ -76,13 +76,14 @@
     --color-fg: #eef0f4;
     --color-muted: #a3aab7;
     --color-faint: #7a8291;
-    --color-signal: #f0529c;
-    --color-signal-soft: rgb(240 82 156 / 0.12);
-    --color-signal-inverse: #be185d;
+    --color-signal: #a78bfa;
+    --color-on-signal: #0b0d12;
+    --color-signal-soft: rgb(167 139 250 / 0.12);
+    --color-signal-inverse: #6d28d9;
 
     --color-k-input: #94a3b8;
-    --color-k-agent: #f0529c;
-    --color-k-model: #a78bfa;
+    --color-k-agent: #a78bfa;
+    --color-k-model: #f0529c;
     --color-k-service: #60a5fa;
     --color-k-store: #2dd4bf;
     --color-k-guard: #fb923c;
