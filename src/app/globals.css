@@ -1,0 +1,141 @@
+@import "tailwindcss";
+
+/*
+ * Design tokens — a light, editorial "systems blueprint" palette.
+ * Pink is the signal colour (agents, calls to action); the node-kind colours
+ * are only used inside architecture diagrams and badges.
+ */
+@theme {
+  --color-canvas: #fcfbfc;
+  --color-panel: #ffffff;
+  --color-raised: #ffffff;
+  --color-line: rgb(15 23 42 / 0.08);
+  --color-line-strong: rgb(15 23 42 / 0.15);
+  --color-edge: rgb(15 23 42 / 0.24);
+  --color-fg: #0e1116;
+  --color-muted: #4d5562;
+  --color-faint: #7d8492;
+  --color-signal: #db2777;
+  --color-signal-soft: rgb(219 39 119 / 0.08);
+  --color-on-signal: #ffffff;
+  /* Accent text on the inverted (bg-fg) contact panel. */
+  --color-signal-inverse: #f9a8d4;
+
+  --color-k-input: #64748b;
+  --color-k-agent: #db2777;
+  --color-k-model: #7c3aed;
+  --color-k-service: #2563eb;
+  --color-k-store: #0d9488;
+  --color-k-guard: #ea580c;
+  --color-k-output: #65a30d;
+
+  --font-sans: var(--font-geist-sans);
+  --font-mono: var(--font-geist-mono);
+  --font-display: var(--font-instrument-serif);
+
+  --animate-flow: flow 1.6s linear infinite;
+  --animate-pulse-soft: pulse-soft 3s ease-in-out infinite;
+  --animate-marquee: marquee 40s linear infinite;
+  --animate-ping-slow: ping 2s cubic-bezier(0, 0, 0.2, 1) infinite;
+
+  @keyframes marquee {
+    to {
+      transform: translateX(-50%);
+    }
+  }
+
+  @keyframes flow {
+    to {
+      stroke-dashoffset: -20;
+    }
+  }
+  @keyframes pulse-soft {
+    0%,
+    100% {
+      opacity: 0.35;
+    }
+    50% {
+      opacity: 1;
+    }
+  }
+}
+
+:root {
+  color-scheme: light dark;
+}
+
+/* Dark theme: same token names, so every utility and SVG follows automatically. */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --color-canvas: #0b0d12;
+    --color-panel: #12151c;
+    --color-raised: #181c25;
+    --color-line: rgb(226 232 240 / 0.09);
+    --color-line-strong: rgb(226 232 240 / 0.17);
+    --color-edge: rgb(226 232 240 / 0.3);
+    --color-fg: #eef0f4;
+    --color-muted: #a3aab7;
+    --color-faint: #7a8291;
+    --color-signal: #f0529c;
+    --color-signal-soft: rgb(240 82 156 / 0.12);
+    --color-signal-inverse: #be185d;
+
+    --color-k-input: #94a3b8;
+    --color-k-agent: #f0529c;
+    --color-k-model: #a78bfa;
+    --color-k-service: #60a5fa;
+    --color-k-store: #2dd4bf;
+    --color-k-guard: #fb923c;
+    --color-k-output: #a3e635;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background: var(--color-canvas);
+  color: var(--color-fg);
+  font-family: var(--font-sans), system-ui, sans-serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+::selection {
+  background: var(--color-signal);
+  color: var(--color-on-signal);
+}
+
+:focus-visible {
+  outline: 2px solid var(--color-signal);
+  outline-offset: 3px;
+  border-radius: 4px;
+}
+
+/* Blueprint grid used behind hero and diagrams. */
+.bg-grid {
+  background-image:
+    linear-gradient(to right, color-mix(in srgb, var(--color-fg) 4.5%, transparent) 1px, transparent 1px),
+    linear-gradient(to bottom, color-mix(in srgb, var(--color-fg) 4.5%, transparent) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+.mask-edges {
+  mask-image: linear-gradient(to right, transparent, black 10%, black 90%, transparent);
+}
+
+.mask-fade {
+  mask-image: radial-gradient(ellipse at 50% 30%, black 30%, transparent 75%);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+  *,
+  *::before,
+  *::after {
+    animation: none !important;
+    transition-duration: 0.01ms !important;
+  }
+}
